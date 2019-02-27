@@ -122,7 +122,7 @@ class PagSeguro extends PagSeguroClient
         $rules = [
           'senderName'     => 'required|max:50',
           'senderAreaCode' => 'required|digits:2',
-          'senderPhone'    => 'required|digits_between:8,9',
+          'senderPhone'    => 'required',
           'senderEmail'    => 'required|email|max:60',
           'senderHash'     => 'required',
           'senderCPF'      => 'required_without:senderCNPJ|digits:11',
